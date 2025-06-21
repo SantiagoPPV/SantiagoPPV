@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #000000 0%, #0a192f 100%);
+}
+
+.bg-pattern {
+  background-color: #000000;
+  background-image: 
+    linear-gradient(135deg, rgba(10, 25, 47, 0.15) 25%, transparent 25%),
+    linear-gradient(225deg, rgba(10, 25, 47, 0.15) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(10, 25, 47, 0.15) 25%, transparent 25%),
+    linear-gradient(315deg, rgba(10, 25, 47, 0.15) 25%, #000000 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+/* Dark Waves Animation */
+.login-page {
+  background: #000000;
+}
+
+.login-waves {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 50%, #0d47a1 0%, #000000 60%);
+  background-size: cover;
+  opacity: 0.15;
+  animation: waveMovement 30s linear infinite;
+}
+
+@keyframes waveMovement {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-25%) translateY(-5%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
