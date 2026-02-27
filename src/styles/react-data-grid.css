@@ -1,0 +1,92 @@
+/* Estilos oscuros personalizados para react-data-grid */
+
+.rdg {
+  --rdg-color: #ffffff;
+  --rdg-border-color: #ffffff33;
+  --rdg-background-color: #0d0d0d;
+  --rdg-header-background-color: #111111;
+  --rdg-row-hover-background-color: #1a1a1a;
+  --rdg-row-selected-background-color: #333333;
+  --rdg-row-selected-hover-background-color: #444444;
+  --rdg-checkbox-color: #ffffff;
+  --rdg-checkbox-focus-color: #3b82f6;
+  --rdg-checkbox-disabled-color: #666666;
+  --rdg-focus-color: #3b82f6;
+
+  border: 1px solid var(--rdg-border-color);
+  color: var(--rdg-color);
+  background-color: var(--rdg-background-color);
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+}
+
+.rdg-cell {
+  border-right: 1px solid var(--rdg-border-color);
+  border-bottom: 1px solid var(--rdg-border-color);
+  padding: 4px;
+}
+
+.rdg-row {
+  border-bottom: 1px solid var(--rdg-border-color);
+}
+.rdg-cell {
+  border-right: 1px solid var(--rdg-border-color);
+  border-bottom: 1px solid var(--rdg-border-color);
+  background-color: var(--rdg-background-color);
+  padding: 6px;
+}
+
+.rdg-header-row .rdg-cell {
+  font-weight: bold;
+  background-color: var(--rdg-header-background-color);
+  border-right: 1px solid var(--rdg-border-color);
+  border-bottom: 1px solid var(--rdg-border-color);
+}
+
+.rdg-cell:focus {
+  outline: 1px solid var(--rdg-focus-color);
+}
+
+.rdg-row {
+  border-bottom: 1px solid var(--rdg-border-color);
+}
+
+.rdg-row:hover {
+  background-color: var(--rdg-row-hover-background-color);
+}
+
+.rdg-row.rdg-row-selected {
+  background-color: var(--rdg-row-selected-background-color);
+}
+
+.rdg-row.rdg-row-selected:hover {
+  background-color: var(--rdg-row-selected-hover-background-color);
+}
+.rdg-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+.rdg-cell:first-child,
+.rdg-header-row .rdg-cell:first-child {
+  width: 80px !important;   /* Ajusta si quieres más estrecho */
+  max-width: 80px !important;
+  min-width: 80px !important;
+}
+.rdg-row {
+  border-bottom: 1px solid #ffffff;
+}
+
+.rdg-cell {
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.rdg-cell:first-child {
+  margin-right: -1px; /* Corrige posible doble borde */
+  border-right: 1px solid #ffffff; /* Asegura que el borde esté alineado */
+}
+
+.rdg-cell:first-child,
+.rdg-header-row .rdg-cell:first-child {
+  padding-right: 0 !important;
+  margin-right: -1px !important;
+}
